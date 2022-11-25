@@ -34,7 +34,10 @@ p {
   border-radius: 10px;
 }
 
-.card-head img{
+.card-head {
+  background-image: url('images/image-product-mobile.jpg');
+  background-size: cover;
+  height: 240px;
   width: 343px;
   border-radius: 10px 10px 0 0;
 }
@@ -92,6 +95,37 @@ button {
   font-family: 700;
   border: 0;
 }
+
+button:hover {
+  background-color:#1A4032;
+  cursor: pointer;
+}
+
 button i {
   margin-right: 12px;
+}
+
+@media(min-width: 760px) {
+  .card {
+    width: 600px;
+    height: 450px;
+    display: flex;
+  }
+
+  .card-head {
+    background-image: url('images/image-product-desktop.jpg');
+    width: 50%;
+    height: 450px;
+    border-radius: 10px 0 0 10px;
+  }
+
+  section.card-body {
+    width: 50%;
+    height: 450px;
+    padding: 32px;
+  }
+
+  button {
+    width: 238px;
+  }
 }
